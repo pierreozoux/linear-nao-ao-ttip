@@ -1,8 +1,7 @@
-This email requires a modern e-mail reader. You can view the email online here:
+Este e-mail requer um cliente de e-mail moderna. Você pode ver o e-mail on-line aqui :
 
 {email_url}.
 
-Thank you, <?php echo get_option('blogname'); ?>
-
-To change your subscription follow:
+Obrigado, Não ao Tratado Transatlântico - Não ao TTIP
+Para alterar a sua  subscrição cliqua aqui:
 {profile_url}.

@@ -38,10 +38,10 @@ $posts = get_posts($filters);
                                 <table border="0" cellpadding="10" cellspacing="0" width="100%">
                                     <tr>
                                         <td valign="top" align="left" style="color: #505050;font-family: Arial;font-size: 10px;">
-                                            You are receiving this email because you subscribed to <?php echo get_option('blogname'); ?>. <a href="{profile_url}">Click here to change your subscription</a>.
+                                            Está a receber este e-mail porque que subscreveu a <?php echo get_option('blogname'); ?>. <a href="{profile_url}">Cliqua aqui para alterar a sua  subscrição</a>.
                                         </td>
                                         <td valign="top" width="190" align="left" style="color: #505050;font-family: Arial;font-size: 10px;">
-                                            Is this email not displaying correctly?<br><a href="{email_url}" style="color: #336699;font-weight: normal;text-decoration: underline;">View it online</a>.
+                                            Este e-mail não esta formatado corretamente?<br><a href="{email_url}" style="color: #336699;font-weight: normal;text-decoration: underline;">Visualização online</a>.
                                         </td>
                                     </tr>
                                 </table>
@@ -63,7 +63,7 @@ $posts = get_posts($filters);
                                 <table border="0" cellpadding="20" cellspacing="0" width="200">
                                     <tr>
                                         <td valign="top" align="left" style="color: #505050;font-family: Arial;font-size: 12px;line-height: 150%;">
-                                            Sidebar text
+                                            <!--Sidebar text-->
                                         </td>
                                     </tr>
                                     <?php
@@ -94,10 +94,10 @@ $posts = get_posts($filters);
                                                 setup_postdata($post);
                                             ?>
                                                 <h2 style="color: #202020;font-family: Arial;font-size: 20px;font-weight: bold;margin-top: 0;margin-bottom: 10px;border-bottom: 1px solid #efefef;">
-                                                    <?php the_title(); ?>
+                                                  <a style="color: #202020;font-family: Arial;font-size: 20px;font-weight: bold;text-decoration: none;" href="<?php the_permalink() ?>"><?php the_title(); ?></a>
                                                 </h2>
-                                                <center><img src="<?php echo newsletter_get_post_image($post->ID, 'medium'); ?>"></center>
-                                                <div style="color: #505050;font-family: Arial;font-size: 14px;line-height: 150%;">
+                                                <center><a style="text-decoration: none;" href="<?php the_permalink() ?>"><img src="<?php echo newsletter_get_post_image($post->ID, 'medium'); ?>"></a></center>
+                                                <div style="color: #505050;font-family: Arial;font-size: 14px;line-height: 150%;margin-bottom: 60px;">
                                                     <?php the_excerpt(); ?>
                                                 </div>
                                             <?php } ?>
